@@ -1,5 +1,18 @@
 install.packages("gapminder")
 library(gapminder)
-data_frame<-gapminder
-df <-gapminder
+data_frame<- gapminder
+df <- gapminder
 library(broom)
+colnames(df)
+dim(df)
+str(df)
+head(df)
+modelassignemt<- lm(lifeExp ~ gdpPercap + pop, data = gapminder)
+summary(modelassignemt)
+confint(modelassignemt,level=0.95)
+par(mfrow=c(2,2))
+plot(modelassignemt)
+modelassignemt2<- lm(lifeExp ~ log(gdpPercap) + pop + year, data = gapminder)
+summary(modelassignemt2)
+confint(modelassignemt2,level=0.95)
+plot(modelassignemt2)

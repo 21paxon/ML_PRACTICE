@@ -14,7 +14,7 @@ library(car)          # regression diagnostic plots
 
 
 ## -----------------------------------------------------------------------------
-## PART A. DATA ACQUISITION
+## PART A. DATA ACQUISITION                                                     
 ## -----------------------------------------------------------------------------
 # In real projects, data comes from a CSV, a database, or an API. Today we
 # use datasets already built into R so we can focus 100% on the ML concepts.
